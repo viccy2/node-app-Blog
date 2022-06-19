@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<%- include('../partial/head.ejs') %>
+
+<body>
+    <%- include('../partial/nav.ejs') %>
+    
+    <div>
+        <section class="vh-10" >
+            <div class="container h-100">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-xl-9">
+          
+                  
+                  <form action='/blogs' method="POST">
+                  <div class="card" style="border-radius: 15px;">
+                    <div class="card-body">
+          
+                      <div class="row align-items-center pt-4 pb-3">
+                        <div class="col-md-3 ps-5">
+          
+                          <h6 class="mb-0">Blog title</h6>
+          
+                        </div>
+                        <div class="col-md-9 pe-5">
+          
+                          <input type="text" class="form-control form-control-lg"  name="title"/>
+          
+                        </div>
+                      </div>
+          
+                      <hr class="mx-n3">
+                      
+                      <div class="row align-items-center pt-4 pb-3">
+                        <div class="col-md-3 ps-5">
+          
+                          <h6 class="mb-0">Blog snippet</h6>
+          
+                        </div>
+                        <div class="col-md-9 pe-5">
+          
+                          <input type="text" class="form-control form-control-lg" name="snippet" />
+          
+                        </div>
+                      </div>
+          
+                      <hr class="mx-n3">
+
+                      <div class="row align-items-center py-3">
+                        <div class="col-md-3 ps-5">
+          
+                          <h6 class="mb-0">Blog body</h6>
+          
+                        </div>
+                        <div class="col-md-9 pe-5">
+          
+                          <textarea class="form-control" rows="3" placeholder="Blog body ... " name="body"></textarea>
+          
+                        </div>
+                      </div>
+          
+                      <hr class="mx-n3">
+                      <div class="px-5 py-4">
+                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                      </div>
+          
+                    </div>
+                  </div>
+                </form>
+          
+                </div>
+              </div>
+            </div>
+          </section><br>
+    </div>
+    <%- include('../partial/footer.ejs') %>  
+</body>

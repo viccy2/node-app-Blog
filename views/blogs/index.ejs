@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<%- include('../partial/head.ejs') %>
+<body>
+    <%- include('../partial/nav.ejs') %>
+    <div class="container-fluid"><br>
+    <h1>The Home page</h1>
+    <!-- <p><%= title %></p> -->
+
+    <% if(blogs.length>0){ %>
+    <% blogs.forEach(blog =>{ %>
+        <a href="/blogs/<%= blog._id  %>">
+        <h3><%= blog.title %></h3>
+        <p><%= blog.snippet %></p>
+        </a>
+    <% }) %>
+    <% } else{ %>
+        <p>No blogs to show</p>
+   <% } %>
+</div>
+<%- include('../partial/footer.ejs') %>  
+</body>
