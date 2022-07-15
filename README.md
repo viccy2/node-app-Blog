@@ -1,2 +1,2 @@
 # node-app Blog
- A blog with Node, Mongodb, Ejs, Express.
+ Blog backend with Node, Mongodb, Ejs, Express.
